@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AIRWAYS</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bookFlight.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div  class='logo'><a href="#"><img src="images/logo.png" alt="icon"></a></div>
+                <div class="name">PANCHEE</div>
+            </header>
+    
+            <nav class=main-nav>
+                <ul>
+                    <li class='active'><a href="#booking">Flights</a></li>
+                    <li class="others"><a href="#">Bags & Seats</a></li>
+                    <li class="others"><a href="#">Offers</a></li>
+                    <li class="others"><a href="#">Hotels</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="button" id="booking">
+                    <li class='current'><a href="#choose">Book a Flight</a></li>
+                    <li class="others2"><a href="#"> Check-In</a></li>
+                    <li class="others2"><a href="#">Flight Status</a></li>
+                    <li class="others2"><a href="#">Edit Booking</a></li>
+                    <li class="others2"><a href="#">Contact Detail</a></li>
+                </ul>
+            </nav>
+            <nav class="radio" id="choose">
+                <ul>
+                    <li>
+                        <input type="radio" name="trip" id="oneway" value="oneway">
+                        <label for="oneway">One Way</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="trip" id="roundtrip" value="roundtrip">
+                        <label for="roundtrip">Round Trip</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="trip" id="multicity" value="multicity">
+                        <label for="multicity">Multi City</label>
+                    </li>
+                </ul>
+            </nav>
+    
+            <section class="details">
+                <div class="one">
+                    <div class="from">
+                        <label for="from">From :</label>
+                        
+                        <!-- <input type="text" name="from" id="from"> -->
+                            <form>
+                            <select name="from" id="from1">
+                                <option value="city">Delhi</option>
+                                <option value="city">Mumbai</option>
+                                <option value="city">Banglore</option>
+                                <option value="city">Pune</option>
+                                <option value="city">Lucknow</option>
+                                <option value="city">Orisa</option>
+                            </select>
+                        </form>
+                        
+                    </div>
+                
+                    <img src="images/arrows.png" alt="" class="icon">
+    
+                    <div class="to">
+                        <label for="to">To :</label>
+                        <!-- <input type="text" name="to" id="to"> -->
+                        <form>
+                            <select name="to" id="to">
+                                <option value="city">Mumbai</option>
+                                <option value="city">Delhi</option>
+                                
+                                <option value="city">Banglore</option>
+                                <option value="city">Pune</option>
+                                <option value="city">Lucknow</option>
+                                <option value="city">Orisa</option>
+                            </select>
+                    </div>
+                </div>
+    
+                <div class="one">
+                    <div class="dept">
+                        <label for="dept">Departure Date :</label>
+                        <input type="text" name="dept" id="dept">
+                    </div>
+                    
+                    <img src="images/arrows.png" alt="" class="icon">
+        
+                    <div class="return">
+                        <label for="return">Return Date :</label>
+                        <input type="text" name="return" id="return">
+                    </div>
+                </div>
+            
+                <div class="one">
+                    <div class="passenger">
+                        <label for="pas">Passengers & Double Seats</label>
+                        <input type="number" name="pas" id="pas">
+                    </div>
+    
+                    <div class="currency">
+                        <label for="pay">Pay in(Currency)</label>
+                        <!-- <input type="text" name="pay" id="pay"> -->
+                        <form>
+                            <select name="pay" id="pay">
+                                <option value="currency">Rupees</option>
+                                <option value="currency">Dollar</option>
+                                <option value="currency">Euro</option>
+                                <option value="currency">Yen</option>
+                                <option value="currency">Dinar</option>
+
+                            </select>
+                    </div>
+                </div>
+                
+                
+            </section>
+    
+            <section>
+                <nav>
+                    <ul  class="special">
+                        <li><input type="radio" name="special" class="demo"   title=' Armed Forces Lorem ipsum dolor sit amet, consectetur adipiscing elit' >
+                        <label for="armed">Armed Forces</label>
+                        </li>
+                        <li><input type="radio" name="special" class="demo"  title='Lorem ipsum dolor sit amet, consectetur adipiscing elit'>
+                            <label for="senior">Senior Citizens</label></li>
+                        <li><input type="radio" name="special" class="demo"  title='Lorem ipsum dolor sit amet, consectetur adipiscing elit'>
+                            <label for="family">Family & Friends</label></li>
+                        <li><input type="radio" name="special" class="demo"  title='Lorem ipsum dolor sit amet, consectetur adipiscing elit'>
+                            <label for="student">Students</label></li>
+                        <li><input type="radio" name="special" class="demo"  title='Lorem ipsum dolor sit amet, consectetur adipiscing elit'>
+                            <label for="minor">Minor</label></li>
+                        <li><input type="radio" name="special" class="demo"  title='Lorem ipsum dolor sit amet, consectetur adipiscing elit'>
+                            <label for="doctor">Doctors & Nurses</label></li>
+                    </ul>
+                </nav>
+            </section>
+            <div class="mydialog" title="PANCHEE">Searching for Available Flights</div>
+            <button class="search"><a href="#">Search Flights</a></button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="bookFlight.js"></script>
+    </body>
+</html>
+
+
+
+
