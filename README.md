@@ -1,2 +1,2 @@
 # Panchee
-Flight booking landing page
+A simple flight booking landing page
